@@ -1,0 +1,720 @@
+/* Blocks */
+
+.w787{
+    max-width: 787px;
+    min-height: 50px;
+}
+
+.w393{
+    max-width: 393px;
+    min-height: 50px;
+}
+
+.w195{
+    max-width: 195.5px;
+    min-height: 50px;
+}
+
+.in_block {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.float {
+    float: left;
+}
+
+.t_cell {
+    display: table-cell;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.flex_box {
+    display: flex;
+}
+
+.fb770 {
+    flex-basis: 787px;
+}
+
+.fb382 {
+    flex-basis: 393px;
+}
+
+.fb188 {
+    flex-basis: 195.5px;
+}
+
+/* Изображения */
+
+img {
+    margin-top: 10px;
+    width: 1180px;
+    background: black;
+}
+
+.block_rel {
+    position: relative;
+    z-index: 10;
+}
+
+.block_rel:hover .img_desc {
+    z-index: 5;
+}
+
+.img_desc{
+    position: absolute;
+    top: 50%;
+    bottom: calc(50% - 44px);
+    right: 0px;
+    left: 0px;
+    z-index: -5;
+    background: rgba(0, 0, 0, 0.63);
+}
+
+.img_desc p {
+    text-align: center;
+}
+
+        /* .img_desc_1 {
+            position: absolute;
+            top: 40px;
+            bottom: 40px;
+            right: 40px;
+            left: 40px;
+            z-index: -5;
+            background: rgba(0, 0, 0, 0.63);
+            display: flex;
+        }
+
+        .img_txt {
+            width: 550px;
+        } */
+
+/* figures */
+
+    .gallery {
+        position: relative;
+        display: inline-block;
+        width: 1200px;
+        min-height: 500px;
+        /* background: #000035; */
+    }
+
+    .bolt {
+        position: relative;
+        outline: 0;
+        margin: 10% auto 5%;
+        width: 300px;
+        height: 100px;
+        background: repeating-linear-gradient(45deg, gray, gray 10%, rgb(48, 47, 47) 10%, rgb(48, 47, 47) 20%);
+        /* background-image: linear-gradient(to left, gray 3%, rgb(48, 47, 47) 6%);
+        background-repeat: repeat-x; */
+        box-shadow: inset 60px 0px 0px 0px;
+    }
+
+    .bolt::before {
+        content: "";
+        position: absolute;
+        background: gray;
+        width: 100px;
+        height: 100px;
+        left: -40px;
+        top: -60px;
+        border-radius: 100px 0px 0px 0px;
+    }
+
+    .bolt::after {
+        content: "";
+        position: absolute;
+        background: gray;
+        width: 100px;
+        height: 100px;
+        left: -40px;
+        top: 60px;
+        border-radius: 0px 0px 0px 100px;
+    }
+
+    /* ----- */
+
+    .nut {
+        position: relative;
+        outline: 0;
+        margin: 10% auto 5%;
+        width: 110px;
+        height: 110px;
+        background: #0000;
+        position: relative;
+        border-radius: 50%;
+        border: 50px solid orange;
+        /* outline: 1px solid orange; */
+    }
+
+    .nut::before {
+        content: "";
+        position: absolute;
+        background: #0000;
+        width: 120px;
+        height: 120px;
+        left: -40px;
+        top: -105px;
+        border-left: 35px solid rgba(0, 0, 0, 0);
+		border-right: 30px solid rgba(255, 255, 255, 0);
+		border-top: 100px solid orange;
+        border-bottom: 100px solid orange;
+        /* outline: 1px solid orange; */
+    }
+
+    .nut::after {
+        content: "";
+        position: absolute;
+        background: #0000;
+        width: 120px;
+        height: 120px;
+        left: -40px;
+        top: -105px;
+        border-left: 35px solid rgba(0, 0, 0, 0);
+		border-right: 30px solid rgba(255, 255, 255, 0);
+		border-top: 100px solid orange;
+        border-bottom: 100px solid orange;
+        transform: rotateZ(-60deg);
+    }
+
+    .nut2 {
+        position: relative;
+        outline: 0;
+        background: #0000;
+        width: 120px;
+        height: 120px;
+        left: -40px;
+        top: -105px;
+        border-left: 35px solid rgba(0, 0, 0, 0);
+		border-right: 30px solid rgba(255, 255, 255, 0);
+		border-top: 100px solid orange;
+        border-bottom: 100px solid orange;
+        transform: rotateZ(60deg);
+    }
+
+    /* ---------- */
+
+    .wrench {
+        position: relative;
+        margin: 10% calc(50% - 180px) 5%;
+        outline: 0;
+        background: linear-gradient(to top, gray, gray 15%, rgb(48, 47, 47) 15%, rgb(48, 47, 47) 35%, gray 35%, gray 65%, rgb(48, 47, 47) 65%, rgb(48, 47, 47) 85%, gray 85%, gray);
+        width: 300px;
+        height: 40px;
+        left: 50px;
+        bottom: -125px;
+        transform: rotateZ(45deg);
+        border-radius: 50px 50px 50px 50px;
+    }
+
+    .wrench::before {  
+        content: "";      
+        position: absolute;
+        left: -105px;
+        bottom: -45px;
+        width: 90px;
+        height: 90px;
+        background: #0000;
+        border-radius: 30px 30px 50% 50%;
+		border-right: 30px solid gray;
+        border-bottom: 50px solid gray;
+        border-left: 30px solid gray;
+        transform: rotateZ(-90deg);
+    }
+
+    .wrench::after {
+        content: "";
+        position: absolute;
+        background: transparent;
+        width: 40px;
+        height: 40px;
+        left: 280px;
+        bottom: -20px;
+        transform: rotateZ(45deg);
+        border-radius: 50%;
+        border-left: 20px solid gray;
+		border-right: 20px solid gray;
+		border-top: 20px solid gray;
+        border-bottom: 20px solid gray;
+    }
+
+    /* ----------- */
+
+    .boat_top {
+        position: absolute;
+        outline: 0;
+        margin: 5% calc(50% - 150px) 5%;
+        width: 100px;
+        height: 0;
+        right: 5%;
+        top: 65px;
+        border-top: 20px solid white;
+        border-bottom: 20px solid white;
+        border-right: 20px solid #0000;
+        background: #0000;
+    }
+
+    .boat_middle {
+        position: relative;
+        outline: 0;
+        margin: 10% calc(50% - 50px) 5%;
+        width: 20px;
+        height: 300px;
+        background: #58390d;
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    .boat_middle:before {
+        content: "";
+        position: absolute;
+        left: -100px;
+        bottom: 30px;
+        width: 150px;
+        height: 230px;
+        background: #0000;
+        border-radius: 50%;
+        border-left: 70px solid white;
+    }
+
+    .boat_middle:after {
+        content: "";
+        position: absolute;
+        left: -50px;
+        bottom: 80px;
+        width: 85px;
+        height: 90px;
+        background: #0000;
+        border-left: 25px solid #0000;
+		border-right: 20px solid white;
+        border-top: 20px solid white;
+        border-bottom: 20px solid #0000;
+        transform: rotate(45deg) skewx(-20deg) skewy(-20deg);
+        z-index: -5;
+    }
+
+    .boat_bottom {
+        position: relative;
+        outline: 0;
+        margin: 10% calc(50% - 50px) 5%;
+        width: 350px;
+        height: 80px;
+        bottom: 130px;
+        right: 125px;
+        transform: rotate(-2deg);
+        background: radial-gradient(circle closest-side at 170px center, BurlyWood 20px, #0000 1px), radial-gradient(circle closest-side at 90px center, BurlyWood 20px, #0000 1px), radial-gradient(circle closest-side at 250px center, BurlyWood 20px, #0000 1px) #58390d;
+    }
+    
+    .boat_bottom::before {
+        content: "";
+        position: absolute;
+        border-left: 70px solid #0000;
+        border-right: 50px solid #58390d;
+        border-top: 50px solid #58390d;
+        border-bottom: 50px solid #0000;
+        transform: rotate(25deg);
+        width: 0;
+        left: -95px;
+        top: -40px;
+    }
+
+    .boat_bottom::after {
+        content: "";
+        position: absolute;
+        background: #58390d;
+        width: 170px;
+        height: 120px;
+        left: 265px;
+        bottom: 45px;
+        transform: rotate(125deg);
+        z-index: -5;
+    }
+
+    /* logo */
+
+    .bg_white {
+        background: white;
+    }
+
+    .sydney {
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+        outline: 0;
+        width: 1px;
+        left: 50px;
+        bottom: -125px;
+        border-radius: 50%;
+        border-top: 120px solid red;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+    }
+
+    .sydney::before {
+        content: "";
+        position: absolute;
+        margin: 0 auto;
+        left: 50px;
+        bottom: -125px;
+        border-radius: 50%;
+        background: black;
+        width: 10px;
+        height: 20px;
+    }
+
+    .sydney::after {
+        content: "";
+        position: absolute;
+        margin: 0 auto;
+        left: 50px;
+        bottom: -125px;
+        border-radius: 50%;
+        background: black;
+        width: 10px;
+        height: 20px;
+    }
+
+    .sydney2 {
+        position: relative;
+        margin: 0 auto;
+        outline: 0;
+        width: 1px;
+        left: 50px;
+        bottom: -125px;
+        border-radius: 50%;
+    }
+
+/* login & registration */
+
+    .login, .registration {
+        font-size: 18px;
+        margin: 0px auto 30px;
+        width: 600px;
+    }
+
+    form {
+        width: 380px;
+        display: inline-block;
+        text-align: center;
+        outline: 1px solid #76b900;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .field_pass {
+        display: inline-block;
+        text-align: left;
+        outline: 0;
+        margin: 10px 20px;
+    }
+
+    .login label {
+        display: inline-block;
+        text-align: right;
+        cursor: pointer;
+        min-width: 70px;
+        color: #76b900;
+    }
+
+    .registration label {
+        display: inline-block;
+        text-align: right;
+        cursor: pointer;
+        min-width: 120px;
+        color: #76b900;
+    }
+    
+    input {
+    color: initial;
+    display: inline-block;
+    text-align: start;
+    background-color: white;
+    margin: 1px;
+    padding: 3px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    }
+
+    input:focus {
+        outline: 1px solid lime;
+    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+
+    input[type="checkbox"]+label {
+        width: 150px;
+        padding: 0 0 0 30px;
+        position: relative;
+        display: inline-block;
+    }
+
+    input[type="checkbox"]+label:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid lime;
+        width: 15px;
+        height: 15px;
+    }
+
+    input[type="checkbox"]:checked+label:after{
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 1.5px;
+        background: lime;
+        border-radius: 50%;
+        border: 1px solid lime;
+        width: 13px;
+        height: 13px;
+    }
+
+    select {
+        height: 25px;
+        background: transparent;
+        border: transparent;
+        position: relative;
+        display: inline-block;
+        padding: 0 20px 0 0;
+        -webkit-appearance: initial;
+    }
+
+    select:focus {
+        outline: 1px solid lime;
+    }
+
+    .select_gender {
+        position: relative;
+        display: inline-block;
+        outline: 0;
+        background: white;
+    }
+
+    .select_gender::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 15px solid lime;
+        border-bottom: 0px solid lime;
+    }
+
+    /* animation */
+
+    .canvas div {
+        outline: 0;
+    }
+
+    .canvas {
+        width: 100%;
+        height: 600px;
+        background: #5f9ea0;
+        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .picture {
+        width: 300px;
+        height: 300px;
+        border: 5px solid #62e8ec;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .picture::after {
+       content: "";
+       position: absolute;
+       left: 15px;
+       bottom: -50px;
+       width: 90%;
+       height: 90px;
+       background: #ababab;
+       border-radius: 10px;
+       box-shadow: inset 10px 0px 0px #757575, inset 25px 0px 0px #cac8c8, inset -40px 0px 0px #757575, inset -55px 0px 0px #cac8c8, inset -80px 0px 0px #909090;
+       z-index: 90;
+    }
+
+    .picture::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -50px;
+        width: 100%;
+        height: 20px;
+        background: #ababab;
+        box-shadow: inset 10px 0px 0px #757575, inset 25px 0px 0px #cac8c8, inset -40px 0px 0px #757575, inset -55px 0px 0px #cac8c8, inset -80px 0px 0px #909090;
+        z-index: 95;
+    }
+
+    .boll {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: #5f9ea0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .boll::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: transparent;
+        box-shadow: inset -20px 0 0 #00000030, inset 20px 0 0 #ffffff30;
+        z-index: 50;
+    }
+    
+    .snow_first {
+        position: absolute;
+        left: 10px;
+        bottom: -80px;
+        width: 300px;
+        height: 175px;
+        border-radius: 50%;
+        background: white;
+        z-index: 15;
+    }
+
+    .snow_second {
+        position: absolute;
+        left: 80px;
+        bottom: -50px;
+        width: 300px;
+        height: 175px;
+        border-radius: 50%;
+        background: rgb(223, 223, 223);
+        z-index: 10;
+    }
+
+    .snow_third {
+        position: absolute;
+        left: -40px;
+        bottom: -40px;
+        width: 300px;
+        height: 175px;
+        border-radius: 50%;
+        background: rgb(165, 165, 165);
+        z-index: 5;
+    }
+
+    .house {
+        position: absolute;
+        left: 60px;
+        top: 130px;
+        width: 45px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to right, #845513, #845513), repeating-linear-gradient(to bottom, #58390d, #58390d 10%, black 10%, black 13%);
+        background-size:  10px 20px, 100% 100%;
+        background-position: top 30px left 18px, 0 0;
+        z-index: 20;
+    }
+
+    .house::before {
+        content: "";
+        position: absolute;
+        left: -12px;
+        bottom: 37px;
+        width: 0;
+        border-right: 35px solid transparent;
+        border-bottom: 35px solid #58390d;
+        border-left: 35px solid transparent;
+        z-index: 25;
+    }
+
+    .house::after {
+        content: "";
+        position: absolute;
+        left: -3px;
+        bottom: 13px;
+        width: 105%;
+        height: 95%;
+        background: transparent;
+        border-top: 5px solid green;
+        border-left: 5px solid green;
+        transform: rotate(45deg);
+        box-shadow: -2px -2px 0 1px white;
+        background-repeat: no-repeat;
+        background-image: radial-gradient(circle, yellow 50%, transparent 50%);
+        background-size:  15px 15px;
+        background-position: top 10px left 10px;
+        z-index: 30;
+    }
+
+    /* media */
+
+    @media screen and (max-width: 800px) {
+        main {
+            width: 90%;
+        }
+        
+        header {
+            position: relative;
+        }
+        
+        .button {
+            width: 40%;
+        }
+
+        .flex_box {
+            width: 50%;
+            display: block;
+            float: left;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        header {
+            width: 320px;
+            position: relative;
+        }
+        
+        main {
+            width: 320px;
+            margin-top: 100px;
+        }
+        
+        header {
+            position: relative;
+        }
+        
+        .button {
+            width: 100%;
+        }
+
+        .flex_box {
+            width: 100%;
+            display: block;
+            float: left;
+        }
+        
+        footer {
+            max-width: 320px;
+        }
+        .foot_blocks {
+            max-width: 100%;
+        }
+    }

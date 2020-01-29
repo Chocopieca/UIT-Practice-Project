@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Видеокарты Nvidia серии GeForce 10</title>
+        <link rel="stylesheet" href="../css/styl.css">
+        <link rel="stylesheet" href="../css/pages.css">
+    </head>
+
+    <body> 
+    <header>
+        <ul>
+            <li class="button"> <a href="../index.html"><div class="navigation">Главная</div></a></li>
+            <li class="button"> <a href="../Img/img.html"><div class="navigation">Картинки</div></a></li>
+            <li class="button"> <a href="#" class="arrow"><div class="navigation">Блоки</div></a>
+                <ul>
+                    <li class="button"><a href="../blocks/flex.html"><div class="navigation">Flex</div></a>
+                    </li>
+                    <li class="button"> <a href="../blocks/float.html"><div class="navigation">Float</div></a> </li>
+                    <li class="button"> <a href="../blocks/in_block.html"><div class="navigation">Inline Block</div></a> </li>
+                    <li class="button"> <a href="../blocks/table-cell.html"><div class="navigation">Table Cell</div></a> </li>
+                    <li class="button">
+                        <a href="#" class="arrow"><div class="navigation">Ссылки</div></a>
+                        <ul>
+                            <li class="button"><a href="https://html5.by/blog/flexbox/"><div class="navigation">Что такое Flexbox?</div></a></li>
+                            <li class="button"><a href="http://www.css-tricks.ru/articles/css/all-about-floats"><div class="navigation">Что такое Float?</div></a></li>
+                            <li class="button"><a href="https://habr.com/ru/post/161581/"><div class="navigation">Что такое Inline block?</div></a></li>
+                            <li class="button"><a href="https://webdevelopernotes.ru/2011/10/10/display-table/"><div class="navigation">Что такое Table cell?</div></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="button"> <a href="#"><div class="navigation">Креатив</div></a> 
+                <ul>
+                    <li class="button"><a href="../figures/figures.html"><div class="navigation">Фигурки</div></a></li>
+                    <li class="button"><a href="../figures/animation.html"><div class="navigation">Анимация</div></a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li class="button"><a href="../login/login.html">Log in</a></li>
+        </ul>
+    </header>
+
+    
+        <div class="main" id="main"> 
+
+  /* --------------------*/
+       </div>
+
+        <footer>
+            <ul class="foot_blocks">
+                <li>
+                    <p>Источники:</p>
+                </li>
+                <li>
+                    <p><a href="https://3dnews.ru">https://3dnews.ru</a></p>
+                </li>
+                <li>
+                    <p><a href="https://www.overclockers.ua">https://www.overclockers.ua</a></p>
+                </li>
+            </ul>
+
+            <ul class="foot_blocks">
+                <li class="button"><a href="https://www.facebook.com/KinglllArtas"></a></li>
+                <li class="button"><a href="https://twitter.com/KopylMax"></a></li>
+                <li class="button"><a href="https://www.instagram.com/kopylmax/"></a></li>
+                <li class="button"><a href="https://www.youtube.com/watch?v=NpJ1uPR4qjk&t=20s"></a></li>
+                <li class="button"><a href="https://www.linkedin.com/in/%D0%BC%D0%B0%D0%BA%D1%81-%D0%BA%D0%BE%D0%BF%D1%8B%D0%BB-881b07162/"></a></li>
+            </ul>
+        </footer>
+
+
+        <div class="button_up">
+            <a href="#main">Вверх</a>
+        </div>
+
+        <div class="soc_panel">
+            <ul class="side_bar">
+                <li><a href="https://www.facebook.com/KinglllArtas"></a></li>
+                <li><a href="https://twitter.com/KopylMax"></a></li>
+                <li><a href="https://www.instagram.com/kopylmax/"></a></li>
+                <li><a href="https://www.youtube.com/watch?v=NpJ1uPR4qjk&t=20s"></a></li>
+            </ul>
+            <h4 class="hover_me">Hover me</h4>
+        </div>
+    </body>
+</html>

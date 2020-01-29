@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap&subset=cyrillic');
+
+@font-face {
+    font-family: 'ibm_plex_monoregular';
+    src: url('../fonts/ibm_plex/ibmplexmono-regular-webfont.eot');
+    src: url('../fonts/ibm_plex/ibmplexmono-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ibm_plex/ibmplexmono-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ibm_plex/ibmplexmono-regular-webfont.woff') format('woff'),
+         url('../fonts/ibm_plex/ibmplexmono-regular-webfont.ttf') format('truetype'),
+         url('../fonts/ibm_plex/ibmplexmono-regular-webfont.svg#ibm_plex_monoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_dinpro-bold';
+	src: url('../fonts/dinpro_bold/dinpro-bold.eot');
+	src: local('☺'), url('../fonts/dinpro_bold/dinpro-bold.woff') format('woff'), url('../fonts/dinpro_bold/dinpro-bold.ttf') format('truetype'), url('../fonts/dinpro_bold/dinpro-bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Reset */
+        
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+/* Структура */
+
+    /* Main */
+
+        .main {
+            margin: 20px auto 0;
+            box-sizing: border-box;
+            padding: 80px 10px 10px 10px;            
+            max-width: 1200px;
+            outline: 10px solid #76b900;
+            position: relative;
+        }
+    
+    
+        html, body {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: #999;
+            margin: 0px;
+            display: block;
+            background: black;
+            font-size: 0;
+            position: relative;
+        }
+
+        h1 {
+            display: inline-block;
+            width: 1000px;
+            margin-block-start: 70px;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            color: #76b900; 
+            text-align: center;
+            font-size: 2cm;
+            font-family: 'Conv_dinpro-bold';
+        }
+
+        h2 {
+            display: block;
+            font-size: 25px;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: 600;
+            padding: 10px 25px 0px;
+            font-family: 'Conv_dinpro-bold';
+        }
+
+        h3 {
+            position: relative;
+            display: block;
+            margin-block-start: 20px;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: 600;
+            color: #76b900;
+            padding: 10px 25px 10px;
+            font-size: 1.17cm;
+            font-family: 'Conv_dinpro-bold';
+        }
+
+        p {
+            display: block;
+            line-height: 25px;
+            text-align: justify;
+            padding: 10px 40px;
+            font-size: 18px;
+            font-family: 'ibm_plex_monoregular';
+            position: relative;
+        }
+
+        span {
+            /* Заглавие. */
+            line-height: 23px;
+            font-weight: 900;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        a {
+            display: block;
+            color: rgb(63, 168, 168);
+            text-decoration: none;
+            padding: 20px 40px 15px 65px;
+            background: black;
+        }
+
+        div div{
+            outline: 1px solid #76b900;
+            text-align: center;
+        }
+
+        .button {
+            outline: 1px solid #76b900;
+            margin: 0 auto;
+            text-transform: uppercase;
+            font-size: 18px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .button:hover > a{
+            color: aqua;
+        }
+
+    /* Дополнительно */
+
+        /* activeBorder */
+
+        .act_border {
+            display: inline-block;
+            position: relative;
+            text-shadow: -5px 3px 4px #456b03;
+            transition: all 1s ease;
+            background: black;
+        }
+
+        .act_border:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #76b900;
+            top: 0;
+            left: 50%;
+        }
+
+        .act_border:hover:before {
+            content: "";
+            width: 100%;
+            left: 0;
+            transition: all 1s ease;
+        }
+
+        .act_border:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #76b900;
+            bottom: 0;
+            right: 50%;
+        }
+        
+        .act_border:hover:after {
+            content: "";
+            width: 100%;
+            right: 0;
+            transition: all 1s ease;
+        }
+
+
+        /* bittomUP */
+        .button_up {
+            display: block;
+            position: fixed;
+            bottom: 25px;
+            right: 50px;
+            z-index: 100;
+            outline: 1px solid #76b900;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+        /* Side_bar */
+        .soc_panel {
+            position: fixed;
+            top: 30%;
+            left: 0;
+            z-index: 100;
+            outline: 1px solid #76b900;
+            font-size: 0;
+            width: 200px;
+            height: 160px;
+            background: black;
+            transform: translateX(-170px);
+        }
+
+        .soc_panel:hover{
+            transform: translateX(0);
+            transition: all 1s ease;
+        }
+
+        .hover_me {
+            position: absolute;
+            right: -130px;
+            display: inline-block;
+            text-align: center;
+            font-size: 18px;
+            width: 160px;
+            height: 30px;
+            vertical-align: top;
+            transform-origin: 15px 15px 0;
+            transform: rotateY(180deg) rotatex(180deg) rotatez(270deg);
+            font-family: 'Conv_dinpro-bold';
+            background: #76b900;
+            color: black;
+        }
+
+        .side_bar {
+            display: inline-block;
+            position: relative;
+            outline: 1px solid #76b900;
+            width: 170px;
+            height: 160px;
+        }
+
+        .side_bar li {
+            position: absolute;
+            top: 5px;
+            left: 85px;
+            margin: 0;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            outline: 1px solid #76b900;
+            transform-origin: 0 0 0;
+        }
+
+        .side_bar > li {
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(45deg) translate(0px, 0px);
+        }
+
+        .side_bar > li+li {
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(45deg) translate(55px, 0px);
+        }
+
+        .side_bar > li+li+li {
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(45deg) translate(0px, 55px);
+        }
+
+        .side_bar > li+li+li+li {
+            transform: rotateX(0deg) rotateY(0deg) rotateZ(45deg) translate(55px, 55px);
+        }
+
+        .side_bar li a {
+            display: block;
+            padding: 0;
+            width: 50px;
+            height: 50px;
+            background: url('sprite2.png');
+            background-size: 900% 600%;
+            transition: background 1s ease;
+            background-position: 150px 0;
+        }
+
+        .side_bar li:hover a {
+            background-position: 150px -50px;
+        }
+
+        /* ---------- */
+
+        .side_bar li+li a {
+            background-position: 100px 0;
+
+        }
+
+        .side_bar li+li:hover a {
+            background-position: 100px -50px;
+        }
+
+        /* ---------- */
+
+        .side_bar li+li+li a {
+            background-position: 150px -100px;
+        }
+
+        .side_bar li+li+li:hover a {
+            background-position: 150px -150px;
+        }
+
+        /* ---------- */
+
+        .side_bar li+li+li+li a {
+            background-position: 100px -100px;
+        }
+
+        .side_bar li+li+li+li:hover a {
+            background-position: 100px -150px;
+        }
+
+/* Header */
+
+        header {
+            font-family: 'Open Sans Condensed', sans-serif;
+            background: black;
+            padding: 10px;
+            outline: 3px solid #76b900;
+            margin: 10px 0px 10px;
+            position: fixed;
+            text-align: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        header ul {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            font-size: 0;
+        }
+
+        header ul+ul {
+            position: absolute;
+            right: 0vw;
+        }
+
+        header ul li {
+            line-height: 23px;
+            font-weight: 900;
+            position: relative;
+            z-index: 100;
+        }
+
+        header ul li:hover > ul{
+            transform: rotateY(360deg);
+            transition: all 1s ease;
+        }
+
+        header ul ul {
+            padding: 5px 5px 0 0;
+            position: absolute;
+            display: inline-block;
+            text-align: center;
+            top: 100%;
+            left: 0;
+            transform-origin: 50% 0 0;
+            transform: rotateX(90deg);
+            transition: all 0 ;
+        }
+
+        header ul ul ul {
+            padding: 5px;
+            position: absolute;
+            display: inline-block;
+            text-align: left;
+            left: 100%;
+            top: -309%;
+            transform-origin: 0 50% 0;
+            transform: rotateY(270deg);
+            
+        }
+
+        .navigation {
+            min-width: 80px;
+            text-align: left;
+        }
+    
+/* Footer */
+
+        footer {
+            outline: 10px solid #76b900;
+            margin: 0 auto 0;
+            box-sizing: border-box;
+            /* display: inline-block; */
+            padding: 10px; 
+            width: 1200px;
+            font-size: 0;
+        }
+
+        .foot_blocks {
+            display: inline-block;
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        footer ul+ul {
+            vertical-align: top;
+            font-size: 18px;
+            margin-left: 300px;
+        }
+
+        footer ul+ul li a {
+            display: block;
+            padding: 0;
+            width: 50px;
+            height: 50px;
+            background: url('sprite2.png');
+            transition: background 1s ease;
+            background-size: 900% 600%;
+            background-position: 0 0;
+        }
+
+        footer ul+ul li+li a{
+            background-position: -50px 0;
+        }
+
+        footer ul+ul li+li+li a{
+            background-position: -150px 0;
+        }
+
+        footer ul+ul li+li+li+li a{
+            background-position: -200px 0;
+        }
+
+        footer ul+ul li+li+li+li+li a{
+            background-position: -250px 0;
+        }
+
+        footer ul+ul li:hover a{
+            background-position: 0 -50px;
+        }
+
+        footer ul+ul li+li:hover a{
+            background-position: -50px -50px;
+        }
+
+        footer ul+ul li+li+li:hover a{
+            background-position: -150px -50px;
+        }
+
+        footer ul+ul li+li+li+li:hover a{
+            background-position: -200px -50px;
+        }
+
+        footer ul+ul li+li+li+li+li:hover a{
+            background-position: -250px -50px;
+        }
+
+/* Icon */
+
+        /* arrow */
+        .arrow:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 5px;
+            width: 50px;
+            height: 50px;
+            background: url(sprite2.png);
+            background-size: 900% 600%;
+            background-position: 300px 200px;
+        }
+
+        header ul li .arrow:hover:after {
+            background-position: 250px 200px;
+        }
+        
+        header ul ul li .arrow:after {
+            content: "";
+            background-position: 200px 200px;
+        }
+
+        header ul ul li .arrow:hover:after {
+            background-position: 200px 150px;
+        }
+
+        /* navigation */
+        header ul li a:before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            width: 50px;
+            height: 50px;
+            background: url(sprite2.png);
+            background-size: 900% 600%;
+        }
+
+        header ul+ul li > a:before {
+            background-position: -150px -150px;
+        }
+
+        header ul+ul li:hover > a:before {
+            background-position: -200px -150px;
+        }
+
+        header ul li > a:before{
+            background-position: 0 200px;
+        }
+
+        header ul li:hover > a:before{
+            background-position: 0 100px;
+        }
+
+        /* -------- */
+
+        header ul li+li > a:before{
+            background-position: -50px 200px;
+        }
+
+        header ul li+li:hover > a:before{
+            background-position: -50px 100px;
+        }
+
+        /* -------- */
+
+        header ul li+li+li > a:before{
+            background-position: -100px 200px;
+        }
+
+        header ul li+li+li:hover > a:before{
+            background-position: -100px 100px;
+        }
+
+        /* -------- */
+
+        header ul ul li a:before{
+            background-position: 0 150px;
+        }
+
+        header ul ul li:hover > a:before{
+            background-position: 0 50px;
+        }
+
+        /* -------- */
+        
+        header ul ul li+li a:before{
+            background-position: 0 150px;
+        }
+
+        header ul ul li+li:hover > a:before{
+            background-position: 0 50px;
+        }
+
+        /* -------- */
+
+        header ul ul li+li+li a:before{
+            background-position: 0 150px;
+        }
+
+        header ul ul li+li+li:hover > a:before{
+            background-position: 0 50px;
+        }
+
+        /* -------- */
+
+        header ul ul li+li+li+li a:before{
+            background-position: 0 150px;
+        }
+
+        header ul ul li+li+li+li:hover > a:before{
+            background-position: 0 50px;
+        }
+
+        /* -------- */
+        
+        header ul ul li+li+li+li+li a:before{
+            background-position: -50px 150px;
+        }
+
+        header ul ul li+li+li+li+li:hover > a:before{
+            background-position: -50px 50px;
+        }
+
+        /* -------- */
+
+        header ul ul ul li:hover a:before {
+            background-position: -50px 50px;
+        }
+
+        header ul ul ul li+li:hover a:before {
+            background-position: -50px 50px;
+        }
+
+        header ul ul ul li+li+li:hover a:before {
+            background-position: -50px 50px;
+        }
+
+        header ul ul ul li+li+li+li:hover a:before {
+            background-position: -50px 50px;
+        }
+
+        /* -------- */
+
+        .button_up a:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 5px;
+            width: 50px;
+            height: 50px;
+            background: url(sprite2.png);
+            background-size: 900% 600%;
+            background-position: 250px -100px;
+        }
+
+        .button_up:hover a{
+            color: aqua;
+        }
+
+        div .button a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 5px;
+            width: 50px;
+            height: 50px;
+            background: url(sprite2.png);
+            background-size: 900% 601%;
+            background-position: -100px -150px;
+        }
+
+        div .button:hover a:before {
+            background-position: -100px -250px;
+        }
+
+        .foot_blocks li+li p a::before {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 5px;
+            width: 50px;
+            height: 50px;
+            background: url(sprite2.png);
+            background-size: 900% 600%;
+            background-position: -50px -150px;
+        }
+
+        .foot_blocks li+li p:hover a::before {
+            background-position: -50px -250px;
+        }
+
+        .foot_blocks li+li p:hover > a{
+            color: aqua;
+        }
